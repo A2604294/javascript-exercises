@@ -10,4 +10,15 @@ const fibonacci = function(count) {
   return b;
 };
 
+//solution with recursion
+const recursiveFibonacci = function(n) {
+    if (n == 1 || n == 2) {
+        return 1;
+    } else if (n < 0) {
+        return "OOPS"
+    }
+    return recursiveFibonacci(n-1) + recursiveFibonacci(n-2);
+
+}
+
 module.exports = fibonacci;
